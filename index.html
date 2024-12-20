@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Maanya</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(90deg, #ff6b81, #ff9a9e);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            font-size: 1.3rem;
+            line-height: 1.8;
+        }
+        .highlight {
+            color: #ff6b81;
+            font-weight: bold;
+        }
+        .heart {
+            text-align: center;
+            margin: 30px 0;
+            animation: pulse 2s infinite;
+        }
+        .heart::before {
+            content: "\2764";
+            font-size: 5rem;
+            color: #ff6b81;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            margin: 40px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .carousel img {
+            width: 100%;
+            flex-shrink: 0;
+            animation: slide 10s infinite;
+        }
+        @keyframes slide {
+            0%, 20% {
+                transform: translateX(0);
+            }
+            25%, 45% {
+                transform: translateX(-100%);
+            }
+            50%, 70% {
+                transform: translateX(-200%);
+            }
+            75%, 95% {
+                transform: translateX(-300%);
+            }
+        }
+        .message {
+            margin: 30px 0;
+            font-style: italic;
+            text-align: center;
+        }
+        .image {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .image img {
+            max-width: 250px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 40px 0;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            background: #ff6b81;
+        }
+        .footer-note {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Happy 11 Months, My Love ❤
+    </header>
+    <div class="content">
+        <div class="carousel">
+            <img src="img1.jpg" alt="Maanya's Smile">
+            <img src="img2.jpg" alt="Special Memories">
+            <img src="img3.jpg" alt="Our Adventures">
+            <img src="img4.jpg" alt="Love and Joy">
+        </div>
+        <div class="image">
+            <img src="img5.jpg" alt="Maanya's Beautiful Picture">
+        </div>
+        <p class="message">
+            My dearest <span class="highlight">Maanya</span>,
+            <br>
+            From the moment you entered my life, everything changed for the better. You are my sunshine, my inspiration, and my reason to smile every day , 1 more month to go and it will be an year.
+            <br><br>
+            I adore your <span class="highlight">creativity</span>, your <span class="highlight">kindness</span>, and the way you light up every room you enter. From your love for the <span class="highlight">Bhagavad Gita</span> to your passion for <span class="highlight">calligraphy</span>, everything about you leaves me in awe.
+            <br><br>
+            Here's to us, to our love, and to many more months and years of happiness together. I love you more than words can ever express.
+        </p>
+        <div class="heart"></div>
+        <div class="gallery">
+            <img src="img6.jpg" alt="Memory 1">
+            <img src="img7.jpg" alt="Memory 2">
+            <img src="img8.jpg" alt="Memory 3">
+            <img src="img9.jpg" alt="Memory 4">
+        </div>
+        <p class="message">
+            Forever yours,<br>
+            <span class="highlight">Shreyansh</span>
+        </p>
+    </div>
+    <footer>
+        <p class="footer-note">Made with infinite love by Shreyansh for Maanya &hearts;</p>
+    </footer>
+</body>
+</html>
